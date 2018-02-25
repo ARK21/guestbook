@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD/EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ark.models.UserData" table="guestbase">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="username" column="username" type="java.lang.String"/>
+        <property name="email" column="email" type="java.lang.String"/>
+        <property name="homePage" column="homepage" type="java.lang.String"/>
+        <property name="captchaAnswer" column="captchatext" type="java.lang.String"/>
+        <property name="messageText" column="text" type="java.lang.String"/>
+        <property name="date" column="date" type="java.lang.String"/>
+        <property name="browser" column="browser" type="java.lang.String"/>
+        <property name="ip" column="ip" type="java.lang.String"/>
+    </class>
+
+</hibernate-mapping>
